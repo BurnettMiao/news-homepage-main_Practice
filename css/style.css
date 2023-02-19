@@ -288,7 +288,9 @@ main .right-column .new-container .new p {
     font-size: 4.2rem;
   }
 
-
+    main .right-column .new-container {
+      gap: 2rem;
+    }
   /* product section */
 
 
