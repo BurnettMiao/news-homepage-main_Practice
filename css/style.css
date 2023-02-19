@@ -208,13 +208,13 @@ main .right-column .new-container .new p {
 .product-area {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .product-area .product-card {
   display: flex;
-  /* flex: 1 1 40rem; */
+  flex-basis: 350px;
   gap: 1.5rem;
 }
 
@@ -245,6 +245,12 @@ main .right-column .new-container .new p {
 
 
 /* media queries */
+@media (max-width: 1024px) {
+  .product-area {
+      gap: 2.5rem;
+    }
+}
+
 @media (max-width: 768px) {
   header .menu-btn {
     display: inline-block;
@@ -326,11 +332,7 @@ main .right-column .new-container .new p {
   }
   /* product section */
   .product-area {
-    flex-direction: column;
+    gap: 2.5rem;;
   }
 
-}
-
-@media (max-width: 390px) {
-  
 }
